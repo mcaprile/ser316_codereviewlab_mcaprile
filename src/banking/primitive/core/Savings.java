@@ -15,6 +15,11 @@ public class Savings extends Account {
 	}
 
 	/**
+	 * Method: Deposit
+	 * Inputs: amount of money to deposit
+	 * Returns: boolean that indicates if money was successfully deposited
+	 * 
+	 * Description: Deposits money into the savings account.
 	 * A deposit comes with a fee of 50 cents per deposit
 	 */
 	public boolean deposit(float amount) {
