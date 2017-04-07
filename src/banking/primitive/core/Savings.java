@@ -1,5 +1,7 @@
 package banking.primitive.core;
 
+import banking.primitive.core.Account.State;
+
 public class Savings extends Account {
 	private static final long serialVersionUID = 111L;
 	private int numWithdraws = 0;
@@ -21,6 +23,9 @@ public class Savings extends Account {
 			if (balance >= 0.0f) {
 				setState(State.OPEN);
 			}
+			else
+				setState(State.OVERDRAWN);
+			return true;
 		}
 		return false;
 	}
